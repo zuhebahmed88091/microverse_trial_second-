@@ -1,0 +1,57 @@
+body {
+    margin: 5px;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: gray;
+}
+
+#navbar a {
+    text-decoration: none;
+    padding: 12px;
+    font-size: 15px;
+    display: block;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
+#main {
+    display: grid;
+}
+
+#welcome-section {
+    background: lightcoral;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+
+#projects {
+    background: lightcoral;
+    text-align: center;
+}
+
+.project-titles a {
+    text-decoration: none;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media all and (max-width: 750px) {
+    #navbar {
+        flex-flow: column-reverse;
+    }
+    #navbar a {
+        color:brown;
+    }
+}
+
